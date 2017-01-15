@@ -1,4 +1,4 @@
-## A simple blog ##
+## A simple blog. ##
 
 
 
