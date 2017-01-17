@@ -2,13 +2,11 @@
 {% block content %}
                 {% for blog in blogs %}
                 <div class="post-preview">
-                    <a href="post">
+                    <a href="post/{{blog.id}}">
                         <h2 class="post-title">
                            {{blog.title}}
                         </h2>
-                        <h3 class="post-subtitle">
-                            {{blog.content}}
-                        </h3>
+                      
                     </a>
                     <p class="post-meta">Posted by <a href="#">{{blog.author}} </a> {{blog.date}}</p>
                 </div>

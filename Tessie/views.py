@@ -20,9 +20,8 @@ def posts_in_category(request, category_id):
     categories = Category.objects.get(pk=category_id)
     return render(request, 'post.html', context={'categories':categories})
 
-def blog_post(request):
-    category_id = 1
-    blog = Blog.objects.get(pk=category_id)
+def blog_post(request, blog_id):
+    blog = Blog.objects.get(pk=blog_id)
     return render(request, 'post.html', context={'blog':blog})
 
  
