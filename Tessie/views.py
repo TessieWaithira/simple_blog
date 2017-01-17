@@ -35,7 +35,7 @@ def add_post(request):
             post_vars['category_id'] = 1
             new_post = Blog(**post_vars)
             new_post.save()
-        return render(request, 'admin.html')
+    return render(request, 'add.html')
 
 
    
